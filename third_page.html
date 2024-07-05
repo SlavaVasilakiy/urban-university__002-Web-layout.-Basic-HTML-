@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend разработка - страница 3</title>
+    <style>
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      nav {
+        margin: 40px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form > input:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Frontend разработка</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ведение</a></li>
+          <li><a href="index.html">Языки</a></li>
+          <li><a href="index.html">Инструменты</a></li>
+          <li><a href="second_page.html">Перейти на 2ю страницу</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <form action="" method="get">
+          <label for="user_name">Ваше имя</label>
+          <input
+            type="text"
+            name="name"
+            id="user_name"
+            placeholder="Ваше имя"
+            required
+          />
+          <label for="user_surname">Ваше имя</label>
+          <input
+            type="text"
+            name="surname"
+            id="user_surname"
+            placeholder="Ваша фамилия"
+            required
+          />
+          <label for="user_email">Ваш email</label>
+          <input type="email" name="email" id="user_email" required />
+          <label for="user_age">Ваша дата рождения</label>
+          <input type="date" name="age" id="user_age" required />
+          <label for="user_internship">
+            Количество лет в сфере frontend-разработки
+          </label>
+          <input
+            type="number"
+            name="internship"
+            id="user_internship"
+            required
+          />
+          <label for="user_message">Отзыв</label>
+          <textarea
+            name="message"
+            id="user_message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <input type="submit" value="Отправить" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <li><a href="second_page.html">Перейти на 2ю страницу</a></li>
+      </nav>
+      <div>
+        <address>
+          © 2024.
+          <a href="https://github.com/SlavaVasilakiy">Slava Vasilakii</a>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
